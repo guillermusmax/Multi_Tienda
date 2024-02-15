@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+import 'package:multi_tienda/views/buyers/widgets/banner_widget.dart';
+import 'package:multi_tienda/views/buyers/widgets/header_screen.dart';
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children: [
+          Header_Screen(),
+          BannerWidget()
+        ],
+      ),
+    );
+  }
+}

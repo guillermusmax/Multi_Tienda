@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "637973204443",
+    "project_id": "multi-store-v2-bb18f",
+    "storage_bucket": "multi-store-v2-bb18f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637973204443:android:0b5164f91bee06685e2bfe",
+        "android_client_info": {
+          "package_name": "com.JCOB.multi_tienda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_HOagxOO6i6tGZVUXHgrlfa_C525KtOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
