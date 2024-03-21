@@ -2,6 +2,9 @@ import 'dart:io';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:multi_tienda/controllers/banner_controller.dart';
+import 'package:multi_tienda/controllers/category_controller.dart';
 import 'package:multi_tienda/views/buyers/authorization/login_screen.dart';
 
 void main() async {
@@ -23,7 +26,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Tienda',
       //theme: ThemeData(
@@ -31,6 +34,10 @@ class MyApp extends StatelessWidget {
         //useMaterial3: true,
       //),
       home: LoginScreen(),
+      initialBinding: BindingsBuilder((){
+        Get.put<CategoryController>(CategoryController());
+        Get.put<BannerController>(BannerController());
+      }),
     );
   }
 }

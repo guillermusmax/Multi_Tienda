@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:multi_tienda/views/buyers/widgets/banner_widget.dart';
+import 'package:multi_tienda/views/buyers/widgets/category_item.dart';
 import 'package:multi_tienda/views/buyers/widgets/header_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,7 +12,8 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         children: [
           Header_Screen(),
-          BannerWidget()
+          BannerWidget(),
+          CategoryItem()
         ],
       ),
     );

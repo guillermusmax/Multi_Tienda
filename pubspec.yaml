@@ -43,6 +43,11 @@ dependencies:
   image_picker: ^1.0.7
   cached_network_image: ^3.3.1
   shimmer_animation: ^2.1.0+1
+  get: ^4.6.6
+  uuid: ^4.3.3
+  firebase_ui_auth: ^1.13.1
+  country_state_city_picker: ^1.2.8
+  flutter_easyloading: ^3.0.5
 
 dev_dependencies:
   flutter_test:
@@ -53,7 +58,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
