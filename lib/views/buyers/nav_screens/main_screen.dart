@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:multi_tienda/views/buyers/nav_screens/car_screen.dart';
+import 'package:multi_tienda/views/buyers/nav_screens/cart_screen.dart';
 import 'package:multi_tienda/views/buyers/nav_screens/category_screen.dart';
 import 'package:multi_tienda/views/buyers/nav_screens/home_screen.dart';
 import 'package:multi_tienda/views/buyers/nav_screens/search_screen.dart';
@@ -15,15 +15,12 @@ class Mainscreen extends StatefulWidget {
 }
 
 class _MainscreenState extends State<Mainscreen> {
-  @override
-
   int _currentPage = 0;
   List<Widget> _pages = [
     HomeScreen(),
     CategoryScreen(),
     StoreScreen(),
-    CarScreen(),
-    //SearchScreen(),
+    CartScreen(),
     AScreen()
   ];
   Widget build(BuildContext context) {
@@ -49,7 +46,7 @@ class _MainscreenState extends State<Mainscreen> {
               label: 'Store'
           ),
           BottomNavigationBarItem(icon: Icon(CupertinoIcons.shopping_cart),
-              label: 'Car'
+              label: 'Cart'
           ),
           BottomNavigationBarItem(icon: Icon(CupertinoIcons.person),
               label: 'Account'

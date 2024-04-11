@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:multi_tienda/Vendors/views/vendor_screens/main_vendor_screen.dart';
 import 'package:multi_tienda/controllers/banner_controller.dart';
 import 'package:multi_tienda/controllers/category_controller.dart';
 import 'package:multi_tienda/views/buyers/authorization/login_screen.dart';
@@ -29,10 +30,10 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Tienda',
-      //theme: ThemeData(
-        //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        //useMaterial3: true,
-      //),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
       home: LoginScreen(),
       initialBinding: BindingsBuilder((){
         Get.put<CategoryController>(CategoryController());

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:multi_tienda/views/buyers/widgets/banner_widget.dart';
 import 'package:multi_tienda/views/buyers/widgets/category_item.dart';
 import 'package:multi_tienda/views/buyers/widgets/header_screen.dart';
+import 'package:multi_tienda/views/buyers/widgets/product_item_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -13,7 +14,8 @@ class HomeScreen extends StatelessWidget {
         children: [
           Header_Screen(),
           BannerWidget(),
-          CategoryItem()
+          CategoryItem(),
+          ProductWidget()
         ],
       ),
     );
