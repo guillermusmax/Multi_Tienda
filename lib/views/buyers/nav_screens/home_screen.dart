@@ -10,13 +10,15 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Header_Screen(),
-          BannerWidget(),
-          CategoryItem(),
-          ProductWidget()
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Header_Screen(),
+            BannerWidget(),
+            CategoryItem(),
+            ProductWidget()
+          ],
+        ),
       ),
     );
   }

@@ -1,0 +1,9 @@
+test:
+  stage: test
+  script:
+    - New-Item -type Directory -Path ./source
+    - New-Item -type Directory -Path ./dest
+    - Write-Output "Hello World!" > ./source/file.txt
+    - robocopy ./source ./dest
+  tags:
+    - windows
